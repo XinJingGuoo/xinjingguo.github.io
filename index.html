@@ -110,6 +110,39 @@
                 column-count: 1;
             }
         }
+
+        .header-image {
+            width: 100%;
+            height: 500px; /* 设置固定高度 */
+            overflow: hidden;
+            border-radius: 15px; /* 添加圆角 */
+        }
+
+        .header-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* 保持图片比例并填充容器 */
+            object-position: center; /* 居中显示图片 */
+            transition: transform 0.3s ease; /* 添加平滑过渡效果 */
+        }
+
+        /* 可选：添加鼠标悬停效果 */
+        .header-image:hover img {
+            transform: scale(1.05);
+        }
+
+        /* 响应式调整 */
+        @media (max-width: 992px) {
+            .header-image {
+                height: 400px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .header-image {
+                height: 300px;
+            }
+        }
     </style>
 
 </head>
@@ -428,7 +461,7 @@
                             </a>
                         </h3>
                         <p class="work-description">
-                            Statistical analysis examining the relationship between alcohol consumption patterns and public health outcomes, utilizing comprehensive data modeling and health metrics.
+                            This project explores the relationship between weekly alcohol consumption and its lifetime health impact using data from the 1989 National Alcohol and Drug Survey. Models include MLE, Bootstrap CI, Bayesian CI, and linear regression to estimate mean drinks and evaluate risk severity.
                         </p>
                     </div>
                 </div>
@@ -462,7 +495,7 @@
                             </a>
                         </h3>
                         <p class="work-description">
-                            Predictive modeling project analyzing political trends, voter behavior, and historical data to forecast election outcomes using advanced statistical methods.
+                            A logistic regression model was built to predict the probability of Canadians voting for the Liberal Party in the 2025 federal election, using survey and census data from 2017–2019. Predictor variables included age, education, income, and province, with post-stratification applied to improve estimation accuracy.
                         </p>
                     </div>
                 </div>
