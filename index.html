@@ -33,46 +33,54 @@
     <style>
         .work-masonry {
             column-count: 3;
-            column-gap: 30px;
+            column-gap: 20px;
             padding: 15px;
         }
 
         .single-work {
             break-inside: avoid;
-            margin-bottom: 30px;
-            display: inline-block;
-            width: 100%;
+            margin-bottom: 20px;
             background: #fff;
-            border-radius: 10px;
+            border-radius: 8px;
             overflow: hidden;
-            box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
             transition: all 0.3s ease;
         }
 
-        .single-work:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 5px 25px rgba(0,0,0,0.15);
+        .work-image {
+            position: relative;
+            overflow: hidden;
         }
 
         .work-image img {
             width: 100%;
             height: auto;
             display: block;
+            transition: transform 0.3s ease;
         }
 
         .work-content {
-            padding: 25px;
+            padding: 20px;
+            background: #fff;
         }
 
         .work-title {
-            font-size: 18px;
-            margin-bottom: 15px;
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 10px;
+            color: #0088ff;
+        }
+
+        .work-title a {
+            color: #0088ff;
+            text-decoration: none;
         }
 
         .work-description {
-            font-size: 14px;
+            font-size: 15px;
             color: #666;
             line-height: 1.6;
+            margin: 0;
         }
 
         @media (max-width: 1200px) {
@@ -344,13 +352,11 @@
                 <!-- 项目 1 -->
                 <div class="single-work">
                     <div class="work-image">
-                        <a href="assets/pdf/Predict US Interests Rate within Eight Quarters.pdf" target="_blank">
-                            <img src="assets/images/work/Predict US Interests Rate.jpg" alt="Interest Rate Prediction">
-                        </a>
+                        <img src="assets/images/work/Predict US Interests Rate.jpg" alt="Interest Rate Prediction">
                     </div>
                     <div class="work-content">
                         <h3 class="work-title">
-                            <a href="assets/pdf/Predict US Interests Rate within Eight Quarters.pdf" target="_blank">
+                            <a href="assets/pdf/Predict US Interests Rate within Eight Quarters.pdf" type="application/pdf" target="_blank">
                                 US Interest Rate Prediction Model
                             </a>
                         </h3>
