@@ -32,22 +32,23 @@
 
     <style>
         .work-masonry {
-            column-count: 3;
-            column-gap: 20px;
-            padding: 15px;
+            column-count: 2;
+            column-gap: 30px;
+            padding: 20px;
         }
 
         .single-work {
             break-inside: avoid;
-            margin-bottom: 20px;
+            margin-bottom: 30px;
             background: #fff;
-            border-radius: 8px;
+            border-radius: 12px;
             overflow: hidden;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
             transition: all 0.3s ease;
         }
 
         .work-image {
+            width: 100%;
             position: relative;
             overflow: hidden;
         }
@@ -56,40 +57,49 @@
             width: 100%;
             height: auto;
             display: block;
-            transition: transform 0.3s ease;
         }
 
         .work-content {
-            padding: 20px;
+            padding: 24px;
             background: #fff;
         }
 
         .work-title {
-            font-size: 20px;
+            font-size: 24px;
             font-weight: 600;
-            margin-bottom: 10px;
-            color: #0088ff;
+            margin-bottom: 16px;
         }
 
         .work-title a {
             color: #0088ff;
             text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .work-title a:hover {
+            color: #0066cc;
         }
 
         .work-description {
-            font-size: 15px;
+            font-size: 16px;
             color: #666;
             line-height: 1.6;
             margin: 0;
         }
 
-        @media (max-width: 1200px) {
-            .work-masonry {
-                column-count: 2;
-            }
+        .section-title .title {
+            font-size: 48px;
+            font-weight: bold;
+            margin-bottom: 20px;
         }
 
-        @media (max-width: 768px) {
+        .section-title p {
+            font-size: 18px;
+            color: #666;
+            line-height: 1.6;
+        }
+
+        @media (max-width: 992px) {
             .work-masonry {
                 column-count: 1;
             }
@@ -341,8 +351,8 @@
     <section id="work" class="work-area pt-125 pb-130">
         <div class="container">
             <div class="row">
-                <div class="col-lg-8">
-                    <div class="section-title pb-25">
+                <div class="col-lg-12">
+                    <div class="section-title pb-35">
                         <h2 class="title">Research</h2>
                         <p>Research projects combining statistical modeling, machine learning, and data visualization to drive insights across diverse domains including economics, healthcare, and public policy.</p>
                     </div>
@@ -356,7 +366,7 @@
                     </div>
                     <div class="work-content">
                         <h3 class="work-title">
-                            <a href="assets/pdf/Predict US Interests Rate within Eight Quarters.pdf" type="application/pdf" target="_blank">
+                            <a href="assets/pdf/Predict US Interests Rate within Eight Quarters.pdf" target="_blank">
                                 US Interest Rate Prediction Model
                             </a>
                         </h3>
@@ -369,9 +379,7 @@
                 <!-- 项目 2 -->
                 <div class="single-work">
                     <div class="work-image">
-                        <a href="assets/pdf/Wearable Products Case Study.pdf" target="_blank">
-                            <img src="assets/images/work/Wearable Products.jpg" alt="Wearable Technology">
-                        </a>
+                        <img src="assets/images/work/Wearable Products.jpg" alt="Wearable Technology">
                     </div>
                     <div class="work-content">
                         <h3 class="work-title">
@@ -385,7 +393,73 @@
                     </div>
                 </div>
 
-                <!-- 继续其他项目... -->
+                <!-- 项目 3 -->
+                <div class="single-work">
+                    <div class="work-image">
+                        <img src="assets/images/work/house price.jpg" alt="Housing Market Analysis">
+                    </div>
+                    <div class="work-content">
+                        <h3 class="work-title">
+                            <a href="assets/pdf/Factors affect the house price in Pierce County.pdf" target="_blank">
+                                Housing Price Analysis in Pierce County
+                            </a>
+                        </h3>
+                        <p class="work-description">
+                            A multi-variable linear regression analysis investigating key factors influencing housing prices in Pierce County, providing insights into market dynamics and price determinants.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- 项目 4 -->
+                <div class="single-work">
+                    <div class="work-image">
+                        <img src="assets/images/work/alcohol research.jpg" alt="Alcohol Impact Analysis">
+                    </div>
+                    <div class="work-content">
+                        <h3 class="work-title">
+                            <a href="assets/pdf/harmful effect from alcohol.pdf" target="_blank">
+                                Health Impact Analysis of Alcohol Consumption
+                            </a>
+                        </h3>
+                        <p class="work-description">
+                            Statistical analysis examining the relationship between alcohol consumption patterns and public health outcomes, utilizing comprehensive data modeling and health metrics.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- 项目 5 -->
+                <div class="single-work">
+                    <div class="work-image">
+                        <img src="assets/images/work/data analysis.jpg" alt="Data Analysis Project">
+                    </div>
+                    <div class="work-content">
+                        <h3 class="work-title">
+                            <a href="assets/pdf/302-Project-Pt1 copy.pdf" target="_blank">
+                                Advanced Data Analysis and Modeling
+                            </a>
+                        </h3>
+                        <p class="work-description">
+                            Comprehensive data analysis project implementing advanced statistical methods and machine learning techniques to extract meaningful insights from complex datasets.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- 项目 6 -->
+                <div class="single-work">
+                    <div class="work-image">
+                        <img src="assets/images/work/election prediction.jpg" alt="Election Prediction">
+                    </div>
+                    <div class="work-content">
+                        <h3 class="work-title">
+                            <a href="assets/pdf/Will the Liberal Party Win the Next Election in 2025.pdf" target="_blank">
+                                Election Outcome Prediction Model 2025
+                            </a>
+                        </h3>
+                        <p class="work-description">
+                            Predictive modeling project analyzing political trends, voter behavior, and historical data to forecast election outcomes using advanced statistical methods.
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
