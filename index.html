@@ -30,6 +30,63 @@
     <!--====== Style css ======-->
     <link rel="stylesheet" href="assets/css/style.css">
 
+    <style>
+        .work-masonry {
+            column-count: 3;
+            column-gap: 30px;
+            padding: 15px;
+        }
+
+        .single-work {
+            break-inside: avoid;
+            margin-bottom: 30px;
+            display: inline-block;
+            width: 100%;
+            background: #fff;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+        }
+
+        .single-work:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 25px rgba(0,0,0,0.15);
+        }
+
+        .work-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .work-content {
+            padding: 25px;
+        }
+
+        .work-title {
+            font-size: 18px;
+            margin-bottom: 15px;
+        }
+
+        .work-description {
+            font-size: 14px;
+            color: #666;
+            line-height: 1.6;
+        }
+
+        @media (max-width: 1200px) {
+            .work-masonry {
+                column-count: 2;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .work-masonry {
+                column-count: 1;
+            }
+        }
+    </style>
 
 </head>
 
@@ -279,109 +336,50 @@
                 <div class="col-lg-8">
                     <div class="section-title pb-25">
                         <h2 class="title">Research</h2>
-                        <p>Research projects combining statistical modeling, machine learning, and data visualization to drive insights across diverse domains including economics, healthcare, and public policy. These works reflect a strong emphasis on real-world application, from forecasting interest rates and analyzing public health data to predicting political outcomes and evaluating housing market drivers. Each project is designed with rigor and curiosity, backed by tools such as Python, R, and Power BI, and grounded in both theoretical understanding and hands-on data analysis.</p>
+                        <p>Research projects combining statistical modeling, machine learning, and data visualization to drive insights across diverse domains including economics, healthcare, and public policy.</p>
                     </div>
                 </div>
             </div>
-            <div class="row justify-content-center">
-                <div class="col-lg-4 col-md-6">
-                    <div class="single-work text-left mt-30">
-                        <div class="work-image">
-                            <img src="assets/images/work/w-1.jpg" alt="Alcohol Research">
-                        </div>
-                        <div class="work-content research-content">
-                            <h3 class="work-title">
-                                <a href="https://github.com/XinJingGuoo/Projects/blob/main/Alcohol%20Consumption%20and%20Health%20Impacts%20in%20Canada/Statistical%20Analysis%20of%20Alcohol%20Consumption%20and%20Its%20Health%20Impacts%20in%20Canada%20(1989).pdf">
-                                    Statistical Analysis of Alcohol Consumption and Health Impacts in Canada
-                                </a>
-                            </h3>
-                            <p class="work-description">
-                                A comprehensive statistical analysis examining the relationship between alcohol consumption patterns and public health outcomes across Canadian provinces, utilizing time-series data and multivariate analysis to identify key trends and health implications.
-                            </p>
-                        </div>
+            <div class="work-masonry">
+                <!-- 项目 1 -->
+                <div class="single-work">
+                    <div class="work-image">
+                        <a href="assets/pdf/Predict US Interests Rate within Eight Quarters.pdf" target="_blank">
+                            <img src="assets/images/work/Predict US Interests Rate.jpg" alt="Interest Rate Prediction">
+                        </a>
+                    </div>
+                    <div class="work-content">
+                        <h3 class="work-title">
+                            <a href="assets/pdf/Predict US Interests Rate within Eight Quarters.pdf" target="_blank">
+                                US Interest Rate Prediction Model
+                            </a>
+                        </h3>
+                        <p class="work-description">
+                            Time series analysis project focused on predicting US interest rates over eight quarters, employing advanced forecasting techniques to model economic trends and monetary policy impacts.
+                        </p>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="single-work text-left mt-30">
-                        <div class="work-image">
-                            <img src="assets/images/work/w-2.jpg" alt="Housing Market Analysis">
-                        </div>
-                        <div class="work-content research-content">
-                            <h3 class="work-title">
-                                <a href="https://github.com/XinJingGuoo/Projects/blob/main/Multi-Variable%20Linear%20Regression%20Project/Factors%20affect%20the%20house%20price%20in%20Pierce%20County.pdf">
-                                    Housing Price Analysis in Pierce County
-                                </a>
-                            </h3>
-                            <p class="work-description">
-                                A multi-variable linear regression analysis investigating key factors influencing housing prices in Pierce County, providing insights into market dynamics and price determinants through statistical modeling.
-                            </p>
-                        </div>
+
+                <!-- 项目 2 -->
+                <div class="single-work">
+                    <div class="work-image">
+                        <a href="assets/pdf/Wearable Products Case Study.pdf" target="_blank">
+                            <img src="assets/images/work/Wearable Products.jpg" alt="Wearable Technology">
+                        </a>
+                    </div>
+                    <div class="work-content">
+                        <h3 class="work-title">
+                            <a href="assets/pdf/Wearable Products Case Study.pdf" target="_blank">
+                                Wearable Technology Market Analysis
+                            </a>
+                        </h3>
+                        <p class="work-description">
+                            In-depth case study of the wearable technology market, analyzing consumer behavior, market trends, and product performance metrics.
+                        </p>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="single-work text-left mt-30">
-                        <div class="work-image">
-                            <img src="assets/images/work/w-3.jpg" alt="Interest Rate Analysis">
-                        </div>
-                        <div class="work-content research-content">
-                            <h3 class="work-title">
-                                <a href="https://github.com/XinJingGuoo/Projects/blob/main/Time%20Series%20Analysis%20Project/Predict%20US%20Interests%20Rate%20within%20Eight%20Quarters.pdf">
-                                    US Interest Rate Prediction Model
-                                </a>
-                            </h3>
-                            <p class="work-description">
-                                Time series analysis project focused on predicting US interest rates over eight quarters, employing advanced forecasting techniques to model economic trends and monetary policy impacts.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="single-work text-left mt-30">
-                        <div class="work-image">
-                            <img src="assets/images/work/w-4.jpg" alt="Wearable Products">
-                        </div>
-                        <div class="work-content research-content">
-                            <h3 class="work-title">
-                                <a href="https://github.com/XinJingGuoo/Projects/blob/main/Wearable%20Products%20Case%20Study/Wearable%20Products%20Case%20Study.pdf">
-                                    Wearable Technology Market Analysis
-                                </a>
-                            </h3>
-                            <p class="work-description">
-                                In-depth case study of the wearable technology market, analyzing consumer behavior, market trends, and product performance metrics to derive strategic business insights.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="single-work text-left mt-30">
-                        <div class="work-image">
-                            <img src="assets/images/work/w-5.jpg" alt="Consumer Financial Analysis">
-                        </div>
-                        <div class="work-content research-content">
-                            <h3 class="work-title">
-                                <a href="#">Consumer Financial Complaints Analysis</a>
-                            </h3>
-                            <p class="work-description">
-                                Analysis of consumer financial complaints data to identify patterns, predict complaint types, and provide insights for improving financial services and customer satisfaction.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="single-work text-left mt-30">
-                        <div class="work-image">
-                            <img src="assets/images/work/w-6.jpg" alt="Bike Theft Analysis">
-                        </div>
-                        <div class="work-content research-content">
-                            <h3 class="work-title">
-                                <a href="#">Toronto Bike Theft Analysis</a>
-                            </h3>
-                            <p class="work-description">
-                                Spatial and temporal analysis of bike theft patterns in Toronto, utilizing GIS and statistical methods to identify high-risk areas and temporal trends.
-                            </p>
-                        </div>
-                    </div>
-                </div>
+
+                <!-- 继续其他项目... -->
             </div>
         </div>
     </section>
