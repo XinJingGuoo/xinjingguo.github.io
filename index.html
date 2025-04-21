@@ -211,6 +211,27 @@
                 margin-bottom: 30px;
             }
         }
+
+        .header-content-right .main-btn {
+            display: inline-block;
+            margin-right: 15px;
+        }
+        
+        .header-content-right .main-btn:last-child {
+            margin-right: 0;
+        }
+
+        @media (max-width: 767px) {
+            .header-content-right .main-btn {
+                display: block;
+                margin-bottom: 15px;
+                text-align: center;
+            }
+            
+            .header-content-right .main-btn:last-child {
+                margin-bottom: 0;
+            }
+        }
     </style>
 
 </head>
@@ -309,6 +330,7 @@
                             <h4 class="sub-title">Hello, I'm</h4>
                             <h1 class="title">Xinjing Guo</h1>
                             <p>A Data Analyst with Business Analyst experience, proficient in SQL, R, Python, and data visualization, turning complex data into clear insights to support strategic business decisions.</p>
+                            <a class="main-btn" href="assets/pdf/Xinjing_resume.pdf" target="_blank" style="margin-bottom: 15px;">Resume</a>
                             <a class="main-btn" href="#work">View my Work</a>
                         </div> <!-- header content right -->
                     </div>
@@ -347,16 +369,16 @@
                     <div class="section-title text-center">
                         <h2 class="title">About Me</h2>
                         <p>Data & Business Analyst passionate about solving problems through analytics, research, and strategy.</p>
-                    </div> <!-- section title -->
+                    </div>
                 </div>
-            </div> <!-- row -->
+            </div>
             <div class="row">
                 <div class="col-lg-6">
                     <div class="about-content mt-50">
                         <h5 class="about-title">Hi There! I'm Xinjing Guo</h5>
-                        <p>I hold a Master's degree from NYU Tandon School of Engineering, and a Bachelor's degree in Economics & Statistics from the University of Toronto.<br><br>
-                        I enjoy uncovering insights from data and transforming them into strategic decisions. I combine statistical modeling and business intuition to understand trends, forecast outcomes, and communicate insights clearly to stakeholders from both technical and non-technical backgrounds.</p>
-                        <p>You can find my latest resume from <a href="assets/pdf/Xinjing_resume.pdf" target="_blank">here</a>. (Last Updated on: 04/20/2025)</p>
+                        <p class="mb-4">I hold a Master's degree from NYU Tandon School of Engineering, and a Bachelor's degree in Economics & Statistics from the University of Toronto.</p>
+                        <p class="mb-4">I enjoy uncovering insights from data and transforming them into strategic decisions. I combine statistical modeling and business intuition to understand trends, forecast outcomes, and communicate insights clearly to stakeholders from both technical and non-technical backgrounds.</p>
+                        <p class="mb-4">You can find my latest resume from <a href="assets/pdf/Xinjing_resume.pdf" target="_blank">here</a>. (Last Updated on: 04/20/2025)</p>
                         <ul class="clearfix">
                             <li>
                                 <div class="single-info d-flex align-items-center">
@@ -569,11 +591,11 @@
 
     <section id="work" class="work-area pt-125 pb-130">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="section-title pb-35">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="section-title text-center pb-35">
                         <h2 class="title">Research</h2>
-                        <p>Research projects combining statistical modeling, machine learning, and data visualization to drive insights across diverse domains including economics, healthcare, and public policy.</p>
+                        <p>Research projects combining statistical modeling, machine learning, and data visualization to drive insights across diverse domains—including economics, healthcare, housing markets, and political forecasting. These projects apply techniques such as time series forecasting, logistic regression, and maximum likelihood estimation to uncover patterns, build predictive models, and support data-driven decisions.</p>
                     </div>
                 </div>
             </div>
@@ -732,25 +754,6 @@
                 <!-- Visualization 2 -->
                 <div class="single-work">
                     <div class="work-image">
-                        <a href="assets/pdf/Superstore Sales Analysis.pdf" target="_blank">
-                            <img src="assets/images/blog/superstore.png" alt="Superstore Sales Analysis">
-                        </a>
-                    </div>
-                    <div class="work-content">
-                        <h3 class="work-title">
-                            <a href="assets/pdf/Superstore Sales Analysis.pdf" target="_blank">
-                                Superstore Sales Analysis Dashboard
-                            </a>
-                        </h3>
-                        <p class="work-description">
-                            Comprehensive sales performance visualization highlighting key metrics, regional trends, and product category insights for data-driven decision making.
-                        </p>
-                    </div>
-                </div>
-
-                <!-- Visualization 3 -->
-                <div class="single-work">
-                    <div class="work-image">
                         <a href="https://rumonthetrack.shinyapps.io/Sta313_Final/" target="_blank">
                             <img src="assets/images/blog/smoking.gif" alt="Smoking Impact Analysis">
                         </a>
@@ -763,6 +766,25 @@
                         </h3>
                         <p class="work-description">
                             Interactive Shiny dashboard exploring global smoking patterns and health impacts, featuring dynamic visualizations of mortality rates and consumption trends.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Visualization 3 -->
+                <div class="single-work">
+                    <div class="work-image">
+                        <a href="assets/pdf/Superstore Sales Analysis.pdf" target="_blank">
+                            <img src="assets/images/blog/superstore.png" alt="Superstore Sales Analysis">
+                        </a>
+                    </div>
+                    <div class="work-content">
+                        <h3 class="work-title">
+                            <a href="assets/pdf/Superstore Sales Analysis.pdf" target="_blank">
+                                Superstore Sales Analysis Dashboard
+                            </a>
+                        </h3>
+                        <p class="work-description">
+                            Comprehensive sales performance visualization highlighting key metrics, regional trends, and product category insights for data-driven decision making.
                         </p>
                     </div>
                 </div>
@@ -781,9 +803,9 @@
                     <div class="section-title text-center pb-25">
                         <h2 class="title">Contact</h2>
                         <p>Feel free to reach out if you have opportunities to collaborate, questions about my projects, or simply want to connect professionally. I look forward to hearing from you!</p>
-                    </div> <!-- section title -->
+                    </div>
                 </div>
-            </div> <!-- row -->
+            </div>
             <div class="row justify-content-center">
                 <div class="col-lg-4 col-md-6 col-sm-7">
                     <div class="contact-box text-center mt-30">
