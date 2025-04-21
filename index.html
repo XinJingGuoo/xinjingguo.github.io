@@ -143,27 +143,33 @@
         }
 
         /* 博客部分样式更新 */
+        .blog-area .row {
+            margin-bottom: -30px;
+        }
+
         .single-blog {
             background: #fff;
             border-radius: 12px;
             overflow: hidden;
             box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
-            transition: all 0.3s ease;
-            height: 100%;
-            display: flex;
-            flex-direction: column;
+            margin-bottom: 30px;
+            height: auto;
         }
 
         .blog-image {
             width: 100%;
             position: relative;
+            padding-top: 66.67%; /* 设置图片容器的宽高比为 3:2 */
             overflow: hidden;
         }
 
         .blog-image img {
+            position: absolute;
+            top: 0;
+            left: 0;
             width: 100%;
-            height: auto;
-            display: block;
+            height: 100%;
+            object-fit: cover;
             transition: transform 0.3s ease;
         }
 
@@ -174,9 +180,6 @@
         .blog-content {
             padding: 24px;
             background: #fff;
-            flex-grow: 1;
-            display: flex;
-            flex-direction: column;
         }
 
         .blog-title {
@@ -596,7 +599,7 @@
             </div> <!-- row -->
             <div class="row justify-content-center">
                 <div class="col-lg-4 col-md-8 col-sm-9">
-                    <div class="single-blog mt-30">
+                    <div class="single-blog">
                         <div class="blog-image">
                             <a href="assets/pdf/bike theft article.pdf" target="_blank">
                                 <img src="assets/images/blog/theft.png" alt="Bike Theft Analysis">
@@ -613,7 +616,7 @@
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-8 col-sm-9">
-                    <div class="single-blog mt-30">
+                    <div class="single-blog">
                         <div class="blog-image">
                             <a href="assets/pdf/Superstore Sales Analysis.pdf" target="_blank">
                                 <img src="assets/images/blog/superstore.png" alt="Superstore Sales Analysis">
@@ -630,7 +633,7 @@
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-8 col-sm-9">
-                    <div class="single-blog mt-30">
+                    <div class="single-blog">
                         <div class="blog-image">
                             <a href="https://rumonthetrack.shinyapps.io/Sta313_Final/" target="_blank">
                                 <img src="assets/images/blog/smoking.gif" alt="Smoking Impact Analysis">
