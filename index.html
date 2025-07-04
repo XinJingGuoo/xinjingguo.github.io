@@ -530,12 +530,13 @@
                         <h4 class="experience-title">Financial Data Analyst Internship</h4>
                         <h5>Finovax Technologies Inc. | New York, US | April 2025 – Present</h5>
                         <ul>
-                              <li>Developed multiple Python-based financial data tools to support quantitative research and reporting.</li>
-                              <li>Built a credit spread analytics pipeline using FRED and Quandl APIs to visualize 10+ years of risk trends across Aaa, Baa, and high-yield bonds.</li>
-                              <li>Automated ETF screener leveraging Tushare API to identify non-stationary and autocorrelated Chinese ETFs using ADF and autocorrelation filters.</li>
-                              <li>Created technical analysis dashboards with moving averages, RSI, and MACD for major U.S. equities using Yahoo Finance data and Plotly.</li>
-                              <li>Engineered S&P 500 sector ranking scripts using real-time data to evaluate top firms based on PE, FFO/P, and other key metrics.</li>
-                              <li>Delivered a 5+ page market risk monitoring report summarizing 5 predictive crash indicators and implemented real-time data fetching scripts.</li>
+                            <li><strong>Credit Spread Analysis Tool (Python, FRED/Quandl APIs):</strong> Built a Python pipeline to retrieve daily yield data for U.S. Treasury and corporate bonds, calculate credit spreads, and visualize 10+ years of trends using Plotly. Supported credit risk assessment and valuation analysis.</li>
+                            <li><strong>ETF Autocorrelation & Stationarity Screener (Tushare):</strong> Automated the retrieval of all A-share ETF tickers and their historical data. Developed functions to filter ETFs with strong autocorrelation and non-stationary closing prices using ADF tests, helping identify candidates for quantitative strategies.</li>
+                            <li><strong>Equity Trend Analysis Dashboard (Yahoo Finance):</strong> Collected 5+ years of historical data for 11 major U.S. stocks. Implemented technical indicators (50/200-day moving averages, RSI, MACD) and built interactive Plotly dashboards to identify buy/sell signals and monitor market momentum.</li>
+                            <li><strong>Systemic Risk Indicator Prototype (US Market):</strong> Researched and selected five predictive indicators of market crashes (e.g., VIX term structure, TED spread). Built Python scripts for live data extraction and compiled a detailed 5-page report outlining their rationale and use in real-time risk monitoring.</li>
+                            <li><strong>S&P 500 Sectoral Metrics Study:</strong> Analyzed the 11 GICS sectors to identify key valuation metrics (e.g., PE for Tech, FFO/P for REITs). Retrieved data for top 5 companies in each sector by market cap and ranked them based on the most recent quarterly data using Python and Yahoo Finance API.</li>
+                            <li><strong>High-Correlation Stock Screener (DJIA & Nasdaq-100):</strong> Developed a script to identify constituents of DJIA and Nasdaq-100 with strong historical price correlation (r > 0.7) to their respective indices over 3 years, aiding in systematic risk exposure analysis and hedging strategy.</li>
+                            <li><strong>US ETF Analytics Pipeline:</strong> Created a two-part Python tool to dynamically retrieve a complete list of US ETF tickers and download one year of OHLCV data from Yahoo Finance. Integrated error handling, missing value detection, anomaly alerts, and visual diagnostics for data quality validation.</li>
                         </ul>
                       </div>
                     </div>
